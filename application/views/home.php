@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>stickUp - a free jQuery Plugin</title>
+    <title>最新</title>
 
     <!-- Bootstrap & Snippet plugin core CSS -->
     <link href="<?php echo base_url();?>css/bootstrap.min.css" rel="stylesheet">
@@ -132,11 +132,10 @@
 
     <div id="home">
     <!-- START THE NAVBAR -->
-    <div id="zlight-nav" class="navbar-wrapper topnav" style=" width:100%;
-    min-width:1300px;">
+    <div id="zlight-nav" class="navbar-wrapper topnav" style=" width:100%;">
         <ul class="nav nav-tabs" style="background: #FFFFFF;">
-   <li ><a href="#">最新</a></li>
-   <li class="active"><a href="#">送朋友</a></li>
+   <li class="active"><a href="#">最新</a></li>
+   <li ><a href="#">送朋友</a></li>
    <li><a href="#">送家人</a></li>
    <li><a href="#">送领导</a></li>
    <li><a href="#">送病人</a></li>
