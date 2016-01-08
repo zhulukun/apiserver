@@ -151,43 +151,86 @@
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-      <div class="item">
-         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
       </div>
       <div class="item">
          <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
       </div>
-     
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+      <div class="item active">
+         <img src="<?php echo base_url();?>images/slide1.png" class="img-responsive" alt="First slide">
+      </div>
+      <div class="item">
+         <img src="<?php echo base_url();?>images/slide2.png" class="img-responsive" alt="Second slide">
+      </div>
+
+
     </div>
 
 
