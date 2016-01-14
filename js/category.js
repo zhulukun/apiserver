@@ -12,7 +12,7 @@ $("#add_category").click(function() {
         var description=$('#description').val();
         
         var data = JSON.stringify({"category_cn": category_cn, "category_en":category_en,"description": description });
-			var url = "http://localhost/api/index.php/plantype/add_category";  
+			var url = "http://123.56.111.79:8080/api/index.php/plantype/add_category";  
 				$.ajax({  
 							type: "post", 
 						    contentType: "application/json; charset=utf-8",
@@ -55,7 +55,7 @@ $("#update_category").click(function() {
         
         var data = JSON.stringify({"id": id, "category_cn": category_cn, "category_en":category_en,"description": description });
         // alert(data);
-			var url = "http://localhost/api/index.php/plantype/update_category";  
+			var url = "http://123.56.111.79:8080/api/index.php/plantype/update_category";  
 				$.ajax({  
 							type: "post", 
 						    contentType: "application/json; charset=utf-8",
