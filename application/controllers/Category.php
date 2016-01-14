@@ -14,7 +14,7 @@ class Category extends CI_Controller {
 	public function manage()
 	{
 	    $this->load->helper('url');
-	    $json_cat=file_get_contents("http://localhost/api/index.php/plantype/select_category");
+	    $json_cat=file_get_contents("http://123.56.111.79:8080/api/index.php/plantype/select_category");
 	    $arr_cat=(array)json_decode($json_cat,TRUE);
 	    $arr['cat']=$arr_cat;
 		$this->load->view('admin/manage_category',$arr);
@@ -25,7 +25,7 @@ class Category extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$id=$this->uri->segment(4,0);
-		$url="http://localhost/api/index.php/plantype/select_unique_category/id/{$id}";
+		$url="http://123.56.111.79:8080/api/index.php/plantype/select_unique_category/id/{$id}";
 		$json_cat=file_get_contents($url);
 		$arr_cat=(array)json_decode($json_cat,TRUE);
 		$arr['cat']=$arr_cat;

@@ -37,6 +37,7 @@
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
     <script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>js/article.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo base_url();?>js/ajaxfileupload.js"></script>
     <script type="text/javascript">
 
     var ue = UE.getEditor('editor');
@@ -178,7 +179,7 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="<?php echo base_url();?>dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Foreach</span>
+                  <span class="hidden-xs"><?php echo $nickname;?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -230,7 +231,7 @@
               <img src="<?php echo base_url();?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Foreach</p>
+              <p><?php echo $nickname;?></p>
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
@@ -336,10 +337,22 @@
                           </select>
                       </div>
                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-6">
+                         <input type="hidden" class="form-control" id="author_id"
+                            placeholder="作者" value="<?php echo $author_id;?>" disabled="disabled">
+                      </div>
+                   </div>
+                    <div class="form-group">
+                      <div class="col-sm-6">
+                         <input type="hidden" class="form-control" id="img_path"
+                            placeholder="路径" disabled="disabled">
+                      </div>
+                   </div>
                    <div class="form-group">
                       <label for="category_cn" class="col-sm-2 control-label">封面图片</label>
                       <div class="col-sm-4">
-                         <input type="file" name="imagepath"/>
+                         <input type="file" name="imagepath" id="imagepath"/>
                       </div>
                       <div class="col-sm-4">
                       <input type="submit" id="submit" class="btn btn-primary" value="上传" />
@@ -574,19 +587,40 @@
  
     <!-- page script -->
     <script>
+    jQuery(function(){   
+  $("#submit").click(function(){     
+    
+    var url="http://localhost/api/index.php/upload/upload_img"
+    $.ajaxFileUpload({
+        url:url,//处理图片脚本
+        secureuri :false,
+        fileElementId :'imagepath',//file控件id
+        dataType : 'json',
+        success : function (data, status){
+            $("#img_path").val(data.response);
+            alert("上传成功");
+        },
+        error: function(data, status, e){
+            alert(e);
+        }
+})
+    return false;
+  }) 
+})
       $(function () {
         
-
+       
         $("#add_article").click(function() {
           
         var content=UE.getEditor('editor').getContent();
         var id = $('#editor').val();
-
+        var author_id=$('#author_id').val();
+        var img_path=$('#img_path').val();
         var title = $('#plan_name').val();
         var category_id=$('#category_en').val();
         var labels=$('#labels').val();
         
-        var data = JSON.stringify({"title":title,"category_id":category_id,"status":1,"content":content,"author_id":"f3bec40b5549d7744d33f441be8eafae","cover_image_id":"fadf"});
+        var data = JSON.stringify({"title":title,"category_id":category_id,"status":1,"content":content,"author_id":author_id,"imagepath":img_path,"labels":labels});
         // alert(data);
       var url = "http://localhost/api/index.php/plan/add_plan";  
         $.ajax({  
