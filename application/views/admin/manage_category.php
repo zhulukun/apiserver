@@ -200,7 +200,7 @@
             <?php foreach ($cat as $item):?>
             <tr>
               <td width="100" style="text-align: center;"><?php echo $item['category_cn']?></td><td width="100" style="text-align: center;"><?php echo $item['category_en']?></td><td width="100" style="text-align: center;"><?php echo $item['description']?></td>
-              <td width="100" style="text-align: center;"><a href="http://localhost/apiserver/index.php/category/update/id/<?php echo $item['id'];?>"><input type="button" id="manage_submit" value="修改"/></a></td>
+              <td width="100" style="text-align: center;"><a href="http://123.56.111.79:8080/apiserver/index.php/category/update/id/<?php echo $item['id'];?>"><input type="button" id="manage_submit" value="修改"/></a></td>
             </tr>
            <?php endforeach;?> 
           
